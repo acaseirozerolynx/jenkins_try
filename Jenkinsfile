@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Setting the variables values') {
          steps {
-            sh '''#!/bin/bash
-                 echo "hello world" 
-               '''
+            sh '/home/alvaro/Desktop/script.sh'
          }
       }
         stage('Test') {
