@@ -1,11 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-            steps {
-                python3 --version
-            }
-        }
+        stage('Setting the variables values') {
+         steps {
+            sh '''#!/bin/bash
+                 echo "hello world" 
+               '''
+         }
+      }
         stage('Test') {
             steps {
                 echo 'Test'
