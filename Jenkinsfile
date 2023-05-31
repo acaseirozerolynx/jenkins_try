@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Setting the variables values') {
          steps {
-            ls
+            echo 'Setting'
          }
       }
         stage('Test') {
