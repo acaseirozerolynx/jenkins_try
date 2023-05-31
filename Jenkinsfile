@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'python3 --version'
+                python3 --version
             }
         }
         stage('Test') {
