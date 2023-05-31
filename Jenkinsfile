@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Setting the variables values') {
          steps {
-            echo 'Setting'
+            sh "chmod +x -R ${env.WORKSPACE}"
+            sh "./home/alvaro/Desktop/script.sh"
          }
       }
         stage('Test') {
