@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('Setting the variables values') {
          steps {
-            sh "sudo chmod +x -R ${env.WORKSPACE}"
-            sh "./${WORKSPACE}/script.sh"
+            sh '''
+          #!/bin/bash
+          pwd
+          ls
+          ./script.sh
+        '''
          }
       }
         stage('Test') {
